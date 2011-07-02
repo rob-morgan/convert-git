@@ -2,19 +2,11 @@
 
 BASE_DIR=$(cd $(dirname $0); pwd)
 
-git init
+git svn init http://svn.carboniteinc.com/repos/carbonite .
 
-git svn init \
-    -TDBIx-Class/0.08/trunk \
-    -ttags/DBIx-Class \
-    -tDBIx-Class/tags \
-    -bbranches/DBIx-Class \
-    -bDBIx-Class/0.08/branches \
-    -bDBIx-Class/0.08/branches/_abandoned_but_possibly_useful \
-    -bbranches \
-    --prefix=svn/ \
-    file://$BASE_DIR/svn-mirror
+cp $BASE_DIR/config ./.git/
 
 git config svn.authorsfile $BASE_DIR/authors
-git svn fetch --authors-prog=$BASE_DIR/author-generate
+
+git svn fetch
 
