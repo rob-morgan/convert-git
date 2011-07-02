@@ -8,5 +8,3 @@ cp $BASE_DIR/config ./.git/
 
 git config svn.authorsfile $BASE_DIR/authors
 
-git svn fetch
-
