@@ -2,5 +2,9 @@
 
 BASE_DIR=$(cd $(dirname $0); pwd)
 
+START=`date`
 git svn fetch
+
+echo "Svn fetch started at $START"
+echo "Finished at `date`"
 
