@@ -1,69 +1,64 @@
+# Client
 abrown = Andy Brown <abrown@carbonite.com>
 achen = Anthony Chen <achen@carbonite.com>
 ahadden = Allen Hadden <ahadden@carbonite.com>
-amercher = Aziza Mercher <amercher@carbonite.com>
-amoah = Aye Moah <amoah@carbonite.com>
-aobrien = Alison O'Brien <aobrien@carbonite.com>
 aorenstein = Aaron Orenstein <aorenstein@carbonite.com>
-bbell = Brenda Bell <bbell@carbonite.com>
-bholland = Ben Holland <bholland@carbonite.com>
-bhunter = Brian Hunter <bhunter@carbonite.com>
-build = Build User <build@carbonite.com>
-carbonite = Build User <build@carbonite.com>
 cfry = Chall Fry <cfry@carbonite.com>
-cgodsay = Chat Godsay <cgodsay@carbonite.com>
 cserrant = Chad Serrant <cserrant@carbonite.com>
 cthien = Carl Thien <cthien@carbonite.com>
-ctracey = Craig Tracey <ctracey@carbonite.com>
 cyan = Cheng Yan <cyan@carbonite.com>
 dave = Dave Camp <dave@criticalpath.com>
 dknowles = Doug Knowles <dknowles@carbonite.com>
-egolin = Eric Golin <egolin@carbonite.com>
-ghenriksen = Gordon Henriksen <ghenriksen@carbonite.com>
-gordon = Gordon Henriksen <ghenriksen@carbonite.com>
-jdebate = Jeremy Debate <jdebate@carbonite.com>
-jflowers = Jeff Flowers <jflowers@carbonite.com>
-jfreidin = Jonathan Freidin <jfreidin@carbonite.com>
-jkalish = John Kalish <jkalish@carbonite.com>
 jleung = Jonathan Leung <jleung@carbonite.com>
 jmcisaac = Jess McIsaac <jmcissac@carbonite.com>
 kbhatt = Kamal Bhatt <kbhatt@carbonite.com>
 kniimi = Kaz Niimi <kniimi@carbonite.com>
-kparrish = Ken Parrish <kparrish@carbonite.com>
-lpallazola = Len Pallazola <lpallazola@carbonite.com>
 lwilson = Larry Wilson <lwilson@carbonite.com>
-mbernardo = Mike Bernardo <mike@greenvolcanosoftware.com>
 mjames = Martyn James <mjames@carbonite.com>
-mrees = Mark Rees <mrees@carbonite.com>
 mstapp = Mike Stapp <mstapp@carbonite.com>
 mtamaoki = Masaki Tamaoki <mtamaoki@carbonite.com>
-ovlasenko = Oleksandr Vlasenko <ovlasenko@carbonite.com>
 pxu = Peak Xu <pxu@carbonite.com>
-rkwan = Ray Kwan <rkwan@carbonite.com>
 rmartin = Ryan Martin <rmartin@carbonite.com>
 rmorgan = Rob Morgan <rmorgan@carbonite.com>
-rmyhill = Robert Myhill <rmyhill@carbonite.com>
 rob = Rob Morgan <rmorgan@carbonite.com>
-scrispin = Scot Crispin <scrispin@carbonite.com>
-skutnii = Sergii Kutnii <skutnii@carbonite.com>
-smaslenko = Stanislav Maslenko <smaslenko@carbonite.com>
-smcnally = Sean McNally <smcnally@carbonite.com>
 tnguyen = Tung Nguyen <tnguyen@carbonite.com>
 tomtitchener = Tom Titchener <ttitchener@carbonite.com>
 ttitchener = Tom Titchener <ttitchener@carbonite.com>
 TTitchener = Tom Titchener <ttitchener@carbonite.com>
-valeinik = Vlad Aleinik <valeinik@carbonite.com>
 vkondapalli = Vaishnavi Kondapalli <vkondapalli@carbonite.com>
+
+# Client QA
+bfang = Bing Fang <bfang@carbonite.com>
+eleblanc = Elise LeBlanc <eleblanc@carbonite.com>
+klawton = Kirt Lawton <klawton@carbonite.com>
+
+# Server
+bbell = Brenda Bell <bbell@carbonite.com>
+bhunter = Brian Hunter <bhunter@carbonite.com>
+cgodsay = Chat Godsay <cgodsay@carbonite.com>
+ctracey = Craig Tracey <ctracey@carbonite.com>
+egolin = Eric Golin <egolin@carbonite.com>
+jflowers = Jeff Flowers <jflowers@carbonite.com>
+jfreidin = Jonathan Freidin <jfreidin@carbonite.com>
+mrees = Mark Rees <mrees@carbonite.com>
+rkwan = Ray Kwan <rkwan@carbonite.com>
+rmyhill = Robert Myhill <rmyhill@carbonite.com>
+scrispin = Scot Crispin <scrispin@carbonite.com>
 wcrofton = Win Crofton <wcrofton@carbonite.com>
+
+# Mobile
+ghenriksen = Gordon Henriksen <ghenriksen@carbonite.com>
+gordon = Gordon Henriksen <ghenriksen@carbonite.com>
 yguy = Yvon Guy <yguy@carbonite.com>
 
+# Web
 cdodge = Chris Dodge <cdodge@carbonite.com>
-dcayon = Darin Cayon <dcayon@carbonite.com>
+cmeigs = Chad Meigs <cmeigs@carbonite.com>
 dadams = Dan Adams <dadams@carbonite.com>
+dcayon = Darin Cayon <dcayon@carbonite.com>
 ddooley = Diane Dooley <ddooley@carbonite.com>
 doladosu = Damilare Oladosu <doladosu@carbonite.com>
 dwhite = Darryl White <dwhite@carbonite.com>
-cmeigs = Chad Meigs <cmeigs@carbonite.com>
 lflowers = Laurie Flowers <lflowers@carbonite.com>
 mdrayer = Matt Drayer <mdrayer@carbonite.com>
 mhebert = Margaret Hebert <mhebert@carbonite.com>
@@ -72,14 +67,52 @@ skumar = Sushil Kumar <skumar@carbonite.com>
 tmeyers = Travis Meyers <tmeyers@carbonite.com>
 wblanchard = Will Blanchard <wblanchard@carbonite.com>
 
+# DB
+bholland = Ben Holland <bholland@carbonite.com>
 dsloat = David Sloat <dsloat@carbonite.com>
 gagarwal = Gunjan Agarwal <gagarwal@carbonite.com>
+kparrish = Ken Parrish <kparrish@carbonite.com>
 smarshall = Shane Marshall <smarshall@carbonite.com>
+smcnally = Sean McNally <smcnally@carbonite.com>
 
+# UX
+amoah = Aye Moah <amoah@carbonite.com>
+cdienhart = Claire Dienhard <cdienhart@carbonite.com> 
+jkeeley = Judy Keeley <jkeeley@carbonite.com>
+
+# Ops
 gturi = Geoff Turi <gturi@carbonite.com>
 lherrington = Lester Herrington <lherrington@carbonite.com>
 mviglas = Mark Viglas <mviglas@carbonite.com>
 blheureux = Brion L'Heureux <blheureux@carbonite.com>
+
+# Marketing/Support
+amercher = Aziza Mercher <amercher@carbonite.com>
+aobrien = Alison O'Brien <aobrien@carbonite.com>
+jkalish = John Kalish <jkalish@carbonite.com>
+lpallazola = Len Pallazola <lpallazola@carbonite.com>
+
+# GlobalLogic
+akurochka = Andrii Kurochka <akurochka@carbonite.com>
 esolodkyi = Evgen Solodkyi <esolodkyi@carbonite.com>
+mbelomerzaev = Maxim Belomerzaev <mbelomerzaev@carbonite.com>
+mkolisnyk = Mykola Kolisnyk <mkolisnyk@carbonite.com>
+oridchenko = Oleg Ridchenko <oridchenko@carbonite.com>
+yzhogolev = Yurii Zhogolev <yzhogolev@carbonite.com>
+
+# Mobile Contract
+jdebate = Jeremy Debate <jdebate@carbonite.com>
+mbernardo = Mike Bernardo <mike@greenvolcanosoftware.com>
+ovlasenko = Oleksandr Vlasenko <ovlasenko@carbonite.com>
+sdumyk = Sergii Dumyk <sdumyk@carbonite.com>
+skutnii = Sergii Kutnii <skutnii@carbonite.com>
+smaslenko = Stanislav Maslenko <smaslenko@carbonite.com>
+valeinik = Vlad Aleinik <valeinik@carbonite.com>
+
+# Pal
 slong = Scott Long <slong@carbonite.com>
+
+# Scripts
+build = Build User <build@carbonite.com>
+carbonite = Build User <build@carbonite.com>
 
