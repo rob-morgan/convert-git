@@ -1,0 +1,13 @@
+#!/bin/sh
+
+BASE_DIR=$(cd $(dirname $0); pwd)
+
+if [ ! -d $BASE_DIR/svn-mirror ]; then
+    # create repository
+    svnadmin create $BASE_DIR/svn-mirror
+    # svn won't let us change revision properties without a hook in place
+    echo '#!/bin/sh' > $BASE_DIR/svn-mirror/hooks/pre-revprop-change && chmod +x $BASE_DIR/svn-mirror/hooks/pre-revprop-change
+    # initialize the mirror
+    svnsync init file://$BASE_DIR/svn-mirror http://svn.carboniteinc.com/repos/carbonite
+fi
+
