@@ -2,7 +2,7 @@
 
 # clean up working dir
 
-git update-ref -d master
+#git update-ref -d master
 
 # create annotated tags out of svn tags
 git for-each-ref --format='%(refname)' refs/remotes/tags/ | while read tag_ref; do
@@ -12,34 +12,43 @@ git for-each-ref --format='%(refname)' refs/remotes/tags/ | while read tag_ref; 
     # find the oldest ancestor for which the tree is the same
     parent_ref="$tag_ref";
     oldest_tag_ref="$tag_ref";
+    echo $tag_ref
     while [ "$( git rev-parse --quiet --verify "$parent_ref"^: )" = "$tree" ]; do
-        # remember the oldest ancestor that has a "tag" commit message; this will
-        # be the one used to annotate the tag
         if [ ! -z "$( git show -s --pretty='format:%s' "$parent_ref" | grep -i "tag" )" ]; then
             oldest_tag_ref="$parent_ref"
         fi
         parent_ref="$parent_ref"^
+        echo "   Parent: `git rev-parse $parent_ref`"
     done
     target_ref=$( git rev-parse "$parent_ref" );
 
     # create an annotated tag based on the last commit in the tag, and delete the "branchy" ref for the tag
+    #git show -s --pretty='format:%s' "$tag_ref" | \
+    #perl -ne 'next if /^git-svn-id:/; $s++, next if /^\s*r\d+\@.*:.*\|/; s/^ // if $s; print' | \
+    echo "Tagging $target_ref as $tag"
     env GIT_COMMITTER_NAME="$(  git show -s --pretty='format:%an' "$oldest_tag_ref" )" \
         GIT_COMMITTER_EMAIL="$( git show -s --pretty='format:%ae' "$oldest_tag_ref" )" \
         GIT_COMMITTER_DATE="$(  git show -s --pretty='format:%ad' "$oldest_tag_ref" )" \
         GIT_COMMIT_MESSAGE="$(  git show -s --pretty='format:%s' "$oldest_tag_ref"  )" \
-        git tag -a -m "$GIT_COMMIT_MESSAGE" "$tag" "$target_ref"
+        perl -e 'printf "   %s\n   %s\n   %s\n   %s\n", $ENV{"GIT_COMMITTER_NAME"}, $ENV{"GIT_COMMITTER_EMAIL"}, $ENV{"GIT_COMMITTER_DATE"}, $ENV{"GIT_COMMIT_MESSAGE"};'
+        #git tag -a -F - "v$tag" "$target_ref"
+    echo "---------------------------------------------------------"
 
-    git update-ref -d "$tag_ref"
+    #git update-ref -d "$tag_ref"
 done
 
 # create local branches out of svn branches
-git for-each-ref --format='%(refname)' refs/remotes/ | while read branch_ref; do
+git for-each-ref --format='%(refname)' refs/remotes/* refs/remotes/mobile/* | while read branch_ref; do
     branch=${branch_ref#refs/remotes/}
-    git branch "$branch" "$branch_ref"
-    git update-ref -d "$branch_ref"
+    echo "Creating branch: $branch"
+    #git branch "$branch" "$branch_ref"
+    #git update-ref -d "$branch_ref"
 done
 
 # rename 'trunk' to 'master'
-git checkout trunk
-git branch -M trunk master
+#git checkout trunk
+#git branch -M trunk master
+
+# list possible merge commits to help create a grafts file
+# git log --pretty=one --all -E --grep='[mM]erge|\(orig r'
 
