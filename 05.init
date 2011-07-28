@@ -2,7 +2,7 @@
 
 BASE_DIR=$(cd $(dirname $0); pwd)
 
-git svn init file://$BASE_DIR/svn-mirror --trunk=trunk
+git svn init file://$BASE_DIR/svn-mirror --trunk=trunk/Carbonite
 
 cat $BASE_DIR/config-branches >> .git/config
 
